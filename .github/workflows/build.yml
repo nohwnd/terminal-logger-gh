@@ -63,4 +63,4 @@ jobs:
     - name: Build, Test and Package
       id: build
       shell: pwsh
-      run: dotnet test --logger='GitHubActions;report-warnings=false'
+      run: dotnet test --logger='GitHubActions;report-warnings=false' -p:vstestusemsbuildoutput=false
